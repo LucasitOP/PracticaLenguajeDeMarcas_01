@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Aquí establecemos la codificación de caracteres -->
+    <meta charset="UTF-8">
+    
+    <!-- Hacemos que la página sea compatible con dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Descripción de la página para motores de búsqueda -->
+    <meta name="description" content="Página de ejemplo de html.">
+    
+    <!-- Palabras clave para que sea más fácil encontrar la página -->
+    <meta name="keywords" content="HTML5, estructura, ejemplo, navegación">
+    
+    <!-- Icono de la página (favicon) -->
+    <link rel="icon" type="image/x-icon" href="lowcountryfavicon.ico"/>
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Low Country Boys</title>
+    
+    <!-- Estilos internos para toda la página -->
+    <style>
+        /* Definimos el estilo general del cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;  /* Tipografía */
+            line-height: 1.6;  /* Altura de las líneas para facilitar la lectura */
+            margin: 0;  /* Quitamos el margen predeterminado del navegador */
+            padding: 0;  /* Quitamos el padding (espaciado interno) predeterminado */
+            text-align: left;  /* Centramos el texto */
+        }
+        
+        /* Creamos un contenedor centrado y con márgenes laterales */
+        .container {
+            width: 80%;  /* Ancho máximo del contenido */
+            margin: 0 auto;  /* Centramos el contenedor horizontalmente */
+            padding: 20px;  /* Añadimos espacio alrededor del contenido */
+        }
+        
+        /* Estilo del encabezado de la página */
+        header {
+            background: #080404;  /* Color de fondo oscuro */
+            color: white;  /* Texto blanco */
+            padding: 10px 0;  /* Espacio superior e inferior */
+            text-align: center;  /* Centramos el contenido */
+        }
+
+        /* Estilo de los enlaces de navegación */
+        nav a {
+            margin: 0 15px;  /* Añadimos espacio entre los enlaces */
+            color: white;  /* Color del texto */
+            text-decoration: none;  /* Quitamos el subrayado de los enlaces */
+        }
+
+        /* Estilo para las secciones del contenido */
+        section {
+            padding: 20px;  /* Espaciado interno */
+            border: 1px solid #ccc;  /* Bordes grises */
+            margin: 10px;  /* Espaciado externo */
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background: #eb2020;  /* Fondo rojo */
+            color: white;  /* Texto blanco */
+            text-align: center;  /* Centrado del texto */
+            padding: 10px 0;  /* Espacio interno */
+        }
+
+        /* Alineamos las imágenes al centro */
+        img {
+            display: block;  /* Hacemos que las imágenes se comporten como bloques */
+            margin: 0 auto;  /* Centramos la imagen horizontalmente */
+        }
+    </style>
+</head>
+
+<!-- Aquí empieza el cuerpo de la página -->
+<body>
+    
+    <!-- Sección del encabezado -->
+    <header>
+        <!-- Imagen del logotipo del restaurante -->
+        <img src="logotipo.JPG" alt="Logotipo" width="100">
+        
+        <!-- Título principal del restaurante -->
+        <h1>Low Country Boys</h1>
+        
+        <!-- Menú de navegación -->
+        <nav>
+            <!-- Cada enlace lleva a una sección de la página -->
+            <a href="#Introducción">Introducción</a>
+            <a href="#seccion1">Información adicional</a>
+            <a href="#TablaConBurguers">Hamburguesas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal para centrar el contenido -->
+    <div class="container">
+
+        <!-- Sección introductoria -->
+        <article id="Introducción">
+            <h2> Introducción:</h2>
+            
+            <!-- Breve presentación del restaurante -->
+            <p>Somos un restaurante al estilo americano situado en Las Rozas (Madrid).</p>
+            
+            <!-- Imagen relacionada con la introducción -->
+            <img src="imagen1.jpg" alt="Descripción de la imagen 1" width="300">
+            
+            <!-- Lista de servicios o detalles importantes -->
+            <ul>
+                <li>Cosas a ofrecer: Comidas y Cenas</li>
+                <li>¿Qué horario tenemos?
+                    <!-- Horarios del restaurante en diferentes días -->
+                    <p>Miércoles a viernes<br>Barra 16:00-23:00<br>Cocina 20:00-22:30</p>
+                    <p>Sábado y domingo<br>Barra 10:00 – 23:00<br>Cocina 13:30 – 16:00; 20:00-22:30</p>
+                </li>
+            </ul>
+        </article>
+
+        <!-- Sección de información adicional -->
+        <article id="seccion1">
+            <h2>Información Adicional</h2>
+            
+            <!-- Detalles sobre actividades adicionales en el local -->
+            <p>Aparte de una increíble experiencia comiendo, también puedes realizar actividades diversas, ya que compartimos local con MadridFly.</p>
+            
+            <!-- Imagen ilustrativa de las actividades -->
+            <img src="Lucasvolando.jpg" alt="Descripción de la imagen 2" width="300">
+            
+            <!-- Lista numerada de actividades disponibles -->
+            <ol>
+                <li>Optan de utilizar el túnel de viento.</li>
+                <li>Optan de un escape room.</li>
+            </ol>
+
+            <!-- Bloque de información extra -->
+            <aside>
+                <h3>Nota</h3>
+                <!-- Nota informativa sobre el túnel de viento -->
+                <p>El túnel de viento es el más grande de toda Europa.</p>
+            </aside>
+        </article>
+
+        <!-- Sección de la tabla de hamburguesas -->
+        <article id="TablaConBurguers">
+            <h2>Hamburguesas</h2>
+            
+            <!-- Tabla con información sobre hamburguesas -->
+            <table border="1" cellpadding="10" width="100%">
+                <!-- Encabezado de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Nombre</th>  <!-- Columna de nombres -->
+                        <th>Descripción</th>  <!-- Columna de descripciones -->
+                        <th>Precio</th>  <!-- Columna de precios -->
+                        <th>Imagen</th>  <!-- Columna de imágenes -->
+                    </tr>
+                </thead>
+                
+                <!-- Cuerpo de la tabla con las hamburguesas -->
+                <tbody>
+                    <tr>
+                        <td><strong>SIMPLE SMASH</strong></strong></td>
+                        <td>Ternera smashed, kétchup, mostaza, pepinillos y queso cheddar fundido.</td>
+                        <td>8,50 €</td>
+                        <!-- Imagen de la hamburguesa -->
+                        <td><img src="simplesmash.jpeg" alt="Simple Smash" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TRIPLE DOUBLE TROUBLE</strong></strong></td>
+                        <td>Doble smash, con doble de queso, doble de cerdo (1/2 pulled pork, 1/2 bacon crujiente).</td>
+                        <td>13,50 €</td>
+                        <!-- Imagen de la hamburguesa -->
+                        <td><img src="tripledoubletrouble.jpeg" alt="Triple Double Trouble" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CAJÚN JAM - JAM</strong></strong></td>
+                        <td>Base de mermelada Cajún de bacon ahumado, ternera smash, queso cheddar, pulled pork, sal...</td>
+                        <td>11,00 €</td>
+                        <!-- Imagen de la hamburguesa -->
+                        <td><img src="cajunjamjam1.jpeg" alt="Cajún Jam - Jam" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CRISP & CHICK</strong></strong></td>
+                        <td>Pollo rebozado tipo Kentucky, bacon crujiente, lechuga iceberg, tomate y nuestra salsa tártara.</td>
+                        <td>9,00 €</td>
+                        <!-- Imagen de la hamburguesa -->
+                        <td><img src="crispchick.jpeg" alt="Crisp & Chick" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CHICKEN'SLAW</strong></strong></td>
+                        <td>Pollo rebozado tipo Kentucky, queso cheddar, coleslaw y bbq.</td>
+                        <td>11,00 €</td>
+                        <!-- Imagen de la hamburguesa -->
+                        <td><img src="crispchick.jpeg" alt="Chicken'slaw" width="100"></td>
+                    </tr>
+                </tbody>
+                
+                <!-- Pie de tabla con mensaje adicional -->
+                <tfoot>
+                    <tr>
+                    <td colspan="4" align="center">¡Ven y disfruta de nuestras hamburguesas!</td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+
+    <!-- Artículo de contacto -->
+    <article id="contacto">
+        <h2>Contacte con nosotros</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </article>
+
+    <!-- Sección de multimedia -->
+    <section>
+        <h2>Multimedia</h2>
+        <h3>Video</h3>
+        <video controls width="400">
+            <source src="Videoburguer.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="musicafondo.mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <table width="100%" border="0" cellpadding="20" style="background-color: black; color: white;">
+            <tr>
+                <!-- Logo del restaurante -->
+                <td align="center" width="33%">
+                    <img src="logotipo.JPG" alt="Logo" width="80"><br>
+                </td>
+                <!-- Navegación rápida -->
+                <td align="center" width="33%">
+                    <a href="#Introducción">INTRODUCCIÓN</a>
+                    <a href="#seccion1">INFORMACIÓN ADICIONAL</a>
+                    <a href="#TablaConBurguers">HAMBURGUESAS</a>
+                    <a href="#contacto">CONTACTO</a>
+                </td>
+                <!-- Información de contacto -->
+                <td align="center" width="33%">
+                    <p><strong>VISÍTANOS EN...</strong></p>
+                    <p>Av. Ntra. Señora del Retamar, 16,<br>28232 Las Rozas de Madrid, Madrid<br>
+                    Tel.: +34 912 37 86 63</p>
+                    <a href="https://www.google.com/search?q=low+country+boys+las+rozas" style="color: red; text-decoration: none;">Cómo llegar</a><br><br>
+                    <!-- Redes sociales -->
+                    <a href="https://www.instagram.com/lowcountryboys/" target="_blank" style="color: white; text-decoration: none;">Instagram</a> |
+                        
+                    </a>
+                    <a href="https://www.tiktok.com/@lowcountryboys_?is_from_webapp=1&sender_device=pc" target="_blank" style="color: white; text-decoration: none;">TikTok</a>
+                </a>
+                </td>
+            </tr>
+        </table>
+        <p>&copy; 2024 Lucas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
